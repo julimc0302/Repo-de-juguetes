@@ -69,7 +69,7 @@ Instalamos las 7 librerías del proyecto:
 | `pandas` | ≥2.0 | Manipulación de datos para el dashboard |
 """
 
-!pip install openai chromadb pdfplumber tiktoken python-dotenv streamlit pandas -q
+#!pip install openai chromadb pdfplumber tiktoken python-dotenv streamlit pandas -q
 print("✅ Todas las dependencias instaladas correctamente")
 
 """## 🔑 Paso 2: Configurar la API Key de OpenAI
