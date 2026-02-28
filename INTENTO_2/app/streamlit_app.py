@@ -54,14 +54,13 @@ def _validate_api_key(key: str) -> tuple[bool, str]:
     if not key.startswith("sk-"):
         return False, "Una API key de OpenAI debe comenzar con 'sk-'."
     try:
-        # FIX: imports separados y dentro del try para evitar UnboundLocalError
         from openai import OpenAI
-        from openai import AuthenticationError
         OpenAI(api_key=key).models.list()
         return True, ""
-    except AuthenticationError:
-        return False, "API key inválida. Verifica que sea correcta."
     except Exception as exc:
+        exc_str = str(exc).lower()
+        if "auth" in exc_str or "401" in exc_str or "invalid" in exc_str or "incorrect" in exc_str:
+            return False, "API key inválida. Verifica que sea correcta."
         return False, f"Error al verificar: {exc}"
 
 
