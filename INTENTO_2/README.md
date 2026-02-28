@@ -2,6 +2,7 @@
 
 > Sistema de Recuperación y Generación Aumentada (RAG) que permite hacer preguntas en lenguaje natural sobre un corpus de 21 artículos académicos acerca de inteligencia artificial aplicada a mercados financieros, implementado en Google Colab.
 
+> Link de la página web: https://repo-de-juguetes-vdguuijjbss5iaw8pxmkkf.streamlit.app/
 ---
 
 ## Tabla de Contenidos
