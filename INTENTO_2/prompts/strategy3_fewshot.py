@@ -9,59 +9,59 @@ style, depth, citation format, and structure before answering the real question.
 from __future__ import annotations
 
 SYSTEM_PROMPT = """\
-Eres un asistente de investigación académica especializado en crimen organizado,
-extorsión y gobernanza criminal en América Latina. Respondes como un investigador
-con experiencia en ciencias sociales comparadas.\
+Eres un asistente de investigación especializado en inteligencia artificial,
+machine learning y estrategias de inversión en mercados bursátiles. Respondes
+como un investigador con experiencia en finanzas cuantitativas y ciencia de datos.\
 """
 
 # ---- Few-shot examples ----
 
-EXAMPLE_1_Q = "¿Qué es la gobernanza criminal y cómo se diferencia del crimen ordinario?"
+EXAMPLE_1_Q = "¿Qué son los modelos híbridos en predicción bursátil y por qué superan a los modelos individuales?"
 EXAMPLE_1_A = """\
-## Gobernanza Criminal: Definición y Distinción
+## Modelos Híbridos en Predicción Bursátil: Definición y Ventajas
 
-La gobernanza criminal se refiere a la provisión sistemática de orden, reglas y servicios
-por parte de organizaciones criminales a poblaciones territorialmente delimitadas, usualmente
-en ausencia o sustitución del Estado (Lessing, 2021). A diferencia del crimen ordinario,
-la gobernanza criminal implica una relación continuada de autoridad: los actores criminales
-no solo cometen delitos, sino que regulan comportamientos, resuelven disputas y proveen
-seguridad a cambio de legitimidad y recursos.
+Los modelos híbridos en predicción bursátil combinan múltiples algoritmos para aprovechar
+las fortalezas de cada uno y mitigar sus limitaciones individuales. A diferencia de los modelos
+tradicionales como ARIMA o LSTM en solitario, los enfoques híbridos integran métodos
+estadísticos clásicos con técnicas de deep learning para capturar tanto dependencias lineales
+como no lineales en los datos financieros (Vishwas et al., 2025).
 
-**Evidencia empírica:** Arias y Barnes (2017) documentan en Rio de Janeiro cómo facciones
-criminales coexisten con el Estado y actores comunitarios en "órdenes plurales", donde
-distintas formas de autoridad se superponen y negocian. Feldmann y Luna (2022) amplían
-este concepto al nivel latinoamericano, argumentando que la crisis del Estado en la región
-ha creado vacíos que las organizaciones criminales llenan con sus propias estructuras
-de gobernanza.
+**Evidencia empírica:** Polamuri et al. (2022) demostraron que el modelo MMGAN-HPA,
+que combina Redes Generativas Adversariales (GANs) con ARIMA y LSTM, supera a los
+modelos independientes al reducir el Error Absoluto Medio (MAE) y el Error Cuadrático
+Medio (RMSE). Por su parte, Zhang y Chen (2023) introdujeron un enfoque en dos etapas
+que combina Descomposición de Modo Variacional (VMD) con modelos ensemble como
+Gradient Boosting y Random Forest, logrando mayor estabilidad predictiva frente a datos
+no estacionarios y ruidosos.
 
-**Limitaciones:** La evidencia empírica se concentra en contextos urbanos (favelas, barrios
-marginales), por lo que la aplicabilidad en áreas rurales o semi-rurales requiere cautela.\
+**Limitaciones:** La mayoría de los modelos híbridos implican altos costos computacionales
+y una complejidad considerable en el ajuste de hiperparámetros, lo que puede dificultar
+su implementación en entornos de trading en tiempo real.\
 """
 
-EXAMPLE_2_Q = "¿Cuáles son los factores que explican por qué algunas empresas resisten la extorsión?"
+EXAMPLE_2_Q = "¿Cómo puede el análisis de sentimiento en redes sociales mejorar la predicción de precios en bolsa?"
 EXAMPLE_2_A = """\
-## Factores de Resistencia a la Extorsión Empresarial
+## Análisis de Sentimiento y Predicción Bursátil
 
-La literatura identifica múltiples factores que aumentan la probabilidad de que una
-empresa resista a la extorsión, operando tanto a nivel individual como colectivo.
+El análisis de sentimiento en redes sociales ha emergido como una fuente de datos alternativa
+valiosa para mejorar la predicción de precios en mercados financieros. Los modelos que
+integran datos textuales de plataformas como Twitter con datos históricos de precios logran
+capturar el estado emocional del mercado, un factor que los modelos puramente cuantitativos
+no pueden detectar (Albahli et al., 2022).
 
-**A nivel individual:** Battisti et al. (2018) encuentran que las empresas con mayor
-capital social —medido por participación en redes y asociaciones— son más propensas a
-resistir en el contexto de la Mafia siciliana. La capacidad financiera también importa:
-empresas con mayor liquidez pueden absorber represalias a corto plazo.
+**Evidencia empírica:** Gandhudi et al. (2024) implementaron una Red Neuronal Cuántica
+Híbrida (HQNN) que integra análisis de sentimiento mediante FinBERT para clasificar
+tweets como positivos, negativos o neutros. Sus resultados muestran que la incorporación
+del sentimiento de Twitter mejora la precisión de predicción hasta en un 18% para acciones
+volátiles. Para la interpretabilidad del modelo, utilizaron valores SHAP que identifican
+los factores clave que impulsan cada predicción. Albahli et al. (2022) corroboran estos
+hallazgos con el modelo Stock Senti WordNet (SSWN), combinando Random Forest y SVM
+con análisis de sentimiento en tiempo real.
 
-**A nivel colectivo:** Bull et al. (2024), estudiando El Salvador, muestran que las
-micro y pequeñas empresas desarrollan estrategias adaptativas como relocalización,
-diversificación de actividades e invisibilización, más que resistencia activa. La
-acción colectiva organizada —como Addiopizzo en Italia— reduce los costos individuales
-de resistir pero requiere coordinación sostenida.
-
-**Factor estatal:** Moncada (2019) argumenta que la forma de resistencia adoptada depende
-críticamente de la postura del Estado: cuando el Estado provee protección efectiva, la
-resistencia activa es viable; cuando no, predominan estrategias de adaptación pasiva.
-
-**Limitaciones:** La mayoría de estudios son de caso o regionales, lo que limita
-generalizaciones causales robustas entre contextos.\
+**Limitaciones:** Los datos de redes sociales son inherentemente ruidosos y no estructurados,
+sensibles al contexto y difíciles de estandarizar. Además, la naturaleza dinámica de las
+plataformas sociales introduce imprevisibilidad que puede reducir la robustez del modelo
+en períodos de alta volatilidad.\
 """
 
 # ---- Main template ----

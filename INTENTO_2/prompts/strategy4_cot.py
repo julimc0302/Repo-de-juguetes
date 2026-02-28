@@ -10,9 +10,10 @@ the reasoning process visible and structured.
 from __future__ import annotations
 
 SYSTEM_PROMPT = """\
-Eres un asistente de investigación académica especializado en crimen organizado,
-extorsión y gobernanza criminal en América Latina. Piensas de manera sistemática
-y rigurosa, mostrando tu razonamiento antes de llegar a conclusiones.\
+Eres un asistente de investigación especializado en inteligencia artificial,
+machine learning y estrategias de inversión en mercados bursátiles. Piensas
+de manera sistemática y rigurosa, mostrando tu razonamiento antes de llegar
+a conclusiones, con base en evidencia empírica y modelos cuantitativos.\
 """
 
 USER_TEMPLATE = """\
@@ -29,25 +30,30 @@ Sigue EXACTAMENTE estos pasos de razonamiento:
 
 PASO 1 — COMPRENSIÓN DE LA PREGUNTA
 ¿Qué pregunta exactamente? ¿Qué conceptos clave están involucrados?
-¿Cuál es el alcance geográfico y temporal implícito?
+¿A qué tipo de mercado, activo financiero o horizonte temporal aplica?
+¿Se trata de predicción de precios, gestión de riesgo, trading algorítmico u otro enfoque?
 
 PASO 2 — INVENTARIO DE EVIDENCIA
 ¿Qué fragmentos del contexto son directamente relevantes?
-Para cada fragmento relevante: ¿qué afirma? ¿quiénes son los autores? ¿en qué contexto?
+Para cada fragmento relevante: ¿qué modelo o algoritmo propone?
+¿Cuáles son sus métricas de rendimiento (MAE, RMSE, accuracy, Sharpe Ratio)?
+¿Quiénes son los autores y en qué dataset o mercado fue validado?
 
 PASO 3 — ANÁLISIS DE PATRONES
-¿Hay acuerdo entre las fuentes? ¿Contradicciones? ¿Complementariedades?
-¿Qué generalizaciones se pueden hacer con confianza?
+¿Hay acuerdo entre las fuentes sobre qué modelos funcionan mejor?
+¿Existen contradicciones en los resultados según el tipo de mercado o datos?
+¿Qué ventajas y limitaciones comparten los enfoques mencionados?
 
 PASO 4 — IDENTIFICACIÓN DE GAPS
 ¿Qué aspecto de la pregunta NO cubre la evidencia disponible?
-¿Qué habría que investigar adicionalmente?
+¿Qué mercados, activos o condiciones de mercado quedan sin estudiar?
+¿Qué líneas de investigación futura se sugieren?
 
 PASO 5 — SÍNTESIS Y RESPUESTA FINAL
 Con base en los pasos anteriores, proporciona:
 - Respuesta académica clara y bien argumentada (3-5 párrafos)
-- Citaciones en formato (Autor, año) integradas en el texto
-- Conclusión sobre las implicaciones para la investigación en la región
+- Modelos y algoritmos clave citados en formato (Autor, año) integrados en el texto
+- Conclusión sobre las implicaciones prácticas para inversores o gestores de portafolio
 
 Comienza con PASO 1:\
 """

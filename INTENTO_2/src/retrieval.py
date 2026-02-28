@@ -236,7 +236,7 @@ def deduplicate_by_paper(
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 
-    test_query = "¿Cómo afecta la extorsión a las pequeñas empresas en América Latina?"
+    test_query = "¿Cómo pueden los algoritmos de machine learning como LSTM y GAN mejorar la predicción de precios en mercados bursátiles volátiles?"
     print(f"Query: {test_query}\n")
 
     for strat in ("small", "large"):

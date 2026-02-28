@@ -87,7 +87,7 @@ def render_api_key_gate() -> bool:
         st.markdown("## 📚 Research Copilot")
         st.markdown(
             "Asistente de investigación para **20 artículos académicos** sobre "
-            "crimen organizado, extorsión y gobernanza criminal en América Latina."
+            "Inversión en bolsa con IA, Machine Learning"
         )
         st.divider()
         st.markdown("### 🔑 Ingresa tu OpenAI API Key")
@@ -275,8 +275,7 @@ def render_sidebar():
 def render_chat_tab(strategy, chunk_strategy, top_k):
     st.header("💬 Chat con los Papers")
     st.caption(
-        "Haz preguntas sobre crimen organizado, extorsión y gobernanza criminal "
-        "en América Latina."
+        "Haz preguntas sobre Inversión en Bolsa con Herramientas de IA y Machine Learning."
     )
 
     for msg in st.session_state.messages:
@@ -387,7 +386,7 @@ def render_compare_tab(chunk_strategy, top_k):
     st.header("🔬 Comparar Estrategias de Prompts")
     question = st.text_area(
         "Pregunta:",
-        value="¿Cuál es la relación entre gobernanza criminal y el Estado en América Latina?",
+        value="¿Cuáles son las principales oportunidades y riesgos de invertir en empresas de inteligencia artificial en mercados emergentes de América Latina?",
         height=80, key="compare_q",
     )
     if st.button("▶ Ejecutar las 4 estrategias", type="primary"):
@@ -458,7 +457,7 @@ Nunca se escribe en disco ni en el código fuente.
     st.markdown("""
 ## Uso local
 ```bash
-git clone https://github.com/krlos20203563/research-copilot
+git clone https://github.com/julimc0302/Repo-de-juguetes
 cd research-copilot
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py

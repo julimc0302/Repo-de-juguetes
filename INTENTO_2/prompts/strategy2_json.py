@@ -9,8 +9,8 @@ code can parse and display results programmatically (citations, confidence, etc.
 from __future__ import annotations
 
 SYSTEM_PROMPT = """\
-Eres un asistente de investigación académica especializado en crimen organizado,
-extorsión y gobernanza criminal en América Latina.
+Eres un asistente de investigación especializado en inteligencia artificial,
+machine learning y estrategias de inversión en mercados bursátiles.
 
 IMPORTANTE: Debes responder ÚNICAMENTE con un objeto JSON válido siguiendo el
 esquema especificado. No incluyas texto antes o después del JSON.\
@@ -35,7 +35,8 @@ Responde con el siguiente objeto JSON (sin texto adicional fuera del JSON):
       "relevancia": "alta|media|baja"
     }}
   ],
-  "paises_mencionados": ["lista", "de", "países"],
+  "modelos_algoritmos": ["lista", "de", "modelos", "o", "algoritmos", "mencionados"],
+  "mercados_mencionados": ["lista", "de", "mercados", "o", "activos", "financieros"],
   "conceptos_clave": ["lista", "de", "conceptos", "centrales"],
   "limitaciones": "Qué no cubre la evidencia disponible o qué es incierto",
   "nivel_confianza": "alto|medio|bajo",
