@@ -1435,9 +1435,3 @@ print(url)
 - *"Compare the performance of different ML models in the reviewed papers"*
 """
 
-# 1. Instalamos la herramienta de conversión
-#!pip install nbconvert
-
-# 2. Convertimos el archivo (reemplaza 'tu_archivo.ipynb' por el nombre real)
-# Nota: En Colab, el archivo suele llamarse 'colab_research_copilot.ipynb'
-!jupyter nbconvert --to markdown "colab_research_copilot (1).ipynb"
