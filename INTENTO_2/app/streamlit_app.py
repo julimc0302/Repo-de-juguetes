@@ -54,7 +54,7 @@ def _validate_api_key(key: str) -> tuple[bool, str]:
     if not key.startswith("sk-"):
         return False, "Una API key de OpenAI debe comenzar con 'sk-'."
     try:
-        from openai import OpenAI, AuthenticationError
+        from openai import OpenAI AuthenticationError
         OpenAI(api_key=key).models.list()
         return True, ""
     except AuthenticationError:
