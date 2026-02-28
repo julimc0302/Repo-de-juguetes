@@ -69,7 +69,7 @@ Instalamos las 7 librerías del proyecto:
 | `pandas` | ≥2.0 | Manipulación de datos para el dashboard |
 """
 
-!pip install openai chromadb pdfplumber tiktoken python-dotenv streamlit pandas -q
+#!pip install openai chromadb pdfplumber tiktoken python-dotenv streamlit pandas -q
 print("✅ Todas las dependencias instaladas correctamente")
 
 """## 🔑 Paso 2: Configurar la API Key de OpenAI
@@ -806,7 +806,7 @@ El ID de cada chunk se genera con MD5 del `filename + chunk_size + chunk_index`.
 Esto garantiza que el mismo chunk siempre tenga el mismo ID, lo que permite `upsert` idempotente.
 """
 
-!pip install chromadb
+#!pip install chromadb
 import chromadb
 import hashlib
 import json
@@ -1435,9 +1435,3 @@ print(url)
 - *"Compare the performance of different ML models in the reviewed papers"*
 """
 
-# 1. Instalamos la herramienta de conversión
-!pip install nbconvert
-
-# 2. Convertimos el archivo (reemplaza 'tu_archivo.ipynb' por el nombre real)
-# Nota: En Colab, el archivo suele llamarse 'colab_research_copilot.ipynb'
-!jupyter nbconvert --to markdown "colab_research_copilot (1).ipynb"
