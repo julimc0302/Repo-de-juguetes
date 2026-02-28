@@ -1,0 +1,13 @@
+Demo Video
+==========
+
+[Pending - add your demo video URL here after recording]
+
+Suggested recording tool: OBS Studio, Loom, or any screen recorder.
+
+What to show in the demo:
+1. Running `python -m src.vectorstore` to index papers
+2. Launching `streamlit run app/streamlit_app.py`
+3. Asking a research question in the Chat tab
+4. Showing the Compare tab with all 4 strategies
+5. Browsing papers in the Paper Browser tab

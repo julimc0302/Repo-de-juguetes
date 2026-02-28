@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "topic": "Inversiones, Algoritmos y Mercados Financieros con IA",
+    "total_questions": 20,
+    "categories": [
+      "fundamentos_ia_financiera",
+      "trading_algoritmico",
+      "gestion_de_riesgos",
+      "etica_y_regulacion",
+      "metodologia_y_datos"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "category": "fundamentos_ia_financiera",
+      "question": "¿Qué es el Machine Learning aplicado a las finanzas y cuáles son sus arquitecturas principales según la literatura actual?",
+      "difficulty": "basic",
+      "expected_papers": [
+        "fin_ai_011",
+        "fin_ai_006",
+        "fin_ai_001"
+      ],
+      "key_concepts": [
+        "Machine Learning",
+        "redes neuronales",
+        "análisis predictivo",
+        "series temporales"
+      ]
+    },
+    {
+      "id": "q002",
+      "category": "fundamentos_ia_financiera",
+      "question": "¿Cómo coexisten los modelos de Deep Learning con el análisis técnico tradicional en mercados de alta volatilidad?",
+      "difficulty": "intermediate",
+      "expected_papers": [
+        "fin_ai_001",
+        "fin_ai_006",
+        "fin_ai_011"
+      ],
+      "key_concepts": [
+        "Deep Learning",
+        "análisis técnico",
+        "coexistencia",
+        "volatilidad"
+      ]
+    },
+    {
+      "id": "q003",
+      "category": "trading_algoritmico",
+      "question": "¿Cuáles son los factores que hacen que ciertos activos sean más aptos para el Arbitraje Estadístico mediante IA?",
+      "difficulty": "intermediate",
+      "expected_papers": [
+        "trade_005",
+        "trade_002",
+        "trade_003"
+      ],
+      "key_concepts": [
+        "arbitraje estadístico",
+        "liquidez",
+        "spread",
+        "microestructura del mercado"
+      ]
+    },
+    {
+      "id": "q004",
+      "category": "trading_algoritmico",
+      "question": "¿Qué estrategias de procesamiento de lenguaje natural (NLP) adoptan los fondos de cobertura para el análisis de sentimiento en tiempo real?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "trade_003"
+      ],
+      "key_concepts": [
+        "NLP",
+        "análisis de sentimiento",
+        "noticias financieras",
+        "redes sociales"
+      ]
+    },
+    {
+      "id": "q005",
+      "category": "gestion_de_riesgos",
+      "question": "¿Bajo qué condiciones los modelos de Reinforcement Learning son más efectivos para la optimización de portafolios?",
+      "difficulty": "intermediate",
+      "expected_papers": [
+        "risk_002",
+        "risk_012",
+        "risk_003"
+      ],
+      "key_concepts": [
+        "Reinforcement Learning",
+        "optimización de carteras",
+        "recompensa",
+        "frontera eficiente"
+      ]
+    },
+    {
+      "id": "q006",
+      "category": "gestion_de_riesgos",
+      "question": "¿Cómo afecta la calidad de los datos históricos a la probabilidad de eventos 'Black Swan' en modelos de IA en el mercado bursátil?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "risk_004"
+      ],
+      "key_concepts": [
+        "cisne negro",
+        "fat tails",
+        "datos históricos",
+        "sesgo de supervivencia"
+      ]
+    },
+    {
+      "id": "q007",
+      "category": "etica_y_regulacion",
+      "question": "¿Qué es el 'sesgo algorítmico' en la concesión de créditos automatizada y qué marcos regulatorios existen en la UE y EE.UU.?",
+      "difficulty": "intermediate",
+      "expected_papers": [
+        "reg_016",
+        "reg_012",
+        "reg_008"
+      ],
+      "key_concepts": [
+        "sesgo algorítmico",
+        "scoring crediticio",
+        "regulación",
+        "transparencia"
+      ]
+    },
+    {
+      "id": "q008",
+      "category": "trading_algoritmico",
+      "question": "¿Por qué el trading de alta frecuencia (HFT) escaló la inestabilidad durante los eventos de 'Flash Crash'?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "trade_017"
+      ],
+      "key_concepts": [
+        "HFT",
+        "Flash Crash",
+        "liquidez fantasma",
+        "latencia"
+      ]
+    },
+    {
+      "id": "q009",
+      "category": "etica_y_regulacion",
+      "question": "¿Qué es la 'IA explicable' (XAI) y cómo opera en la auditoría de fondos de inversión cuantitativos?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "reg_008"
+      ],
+      "key_concepts": [
+        "XAI",
+        "caja negra",
+        "auditoría",
+        "interpretabilidad"
+      ]
+    },
+    {
+      "id": "q010",
+      "category": "metodologia_y_datos",
+      "question": "¿Cuál fue el impacto de la implementación de modelos Transformers en la predicción de precios de criptoactivos?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "meth_010"
+      ],
+      "key_concepts": [
+        "Transformers",
+        "Atención",
+        "Criptomonedas",
+        "Series de tiempo"
+      ]
+    },
+    {
+      "id": "q011",
+      "category": "fundamentos_ia_financiera",
+      "question": "¿Cómo ha evolucionado la teoría de carteras de Markowitz con la integración de algoritmos de computación cuántica?",
+      "difficulty": "advanced",
+      "expected_papers": [
+        "fin_ai_006",
+        "fin_ai_011",
+        "fin_ai_016"
+      ],
+      "key_concepts": [
+        "Computación cuántica",
+        "teoría de carteras",
+        "optimización combinatoria",
+        "finanzas 2.0"
+      ]
+    },
+    {
+      "id": "q012",
+      "category": "gestion_de_riesgos",
+      "question": "¿Qué distingue a los modelos de VaR (Value at Risk) tradicionales de los modelos de riesgo basados en redes generativas adversarias (GANs)?",
+      "difficulty": "intermediate",
+      "expected_papers": [
+        "risk_005"
+      ],
+      "key_concepts": [
+        "VaR",
+        "GANs",
+        "simulación de escenarios",
+        "estrés financiero"
+      ]
+    },
+    {
+      "id": "q013",
+      "category": "metodologia_y_datos",
+      "question": "¿Cómo responden los modelos de inversión ante la 'deriva de datos' (data drift) en mercados emergentes?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "meth_020"
+      ],
+      "key_concepts": [
+        "data drift",
+        "reentrenamiento",
+        "mercados emergentes",
+        "adaptabilidad"
+      ]
+    },
+    {
+      "id": "q014",
+      "category": "metodologia_y_datos",
+      "question": "¿Cuáles son los principales problemas metodológicos al realizar backtesting de estrategias basadas en IA?",
+      "difficulty": "basic",
+      "expected_papers": [
+        "meth_013"
+      ],
+      "key_concepts": [
+        "backtesting",
+        "overfitting",
+        "look-ahead bias",
+        "costos de transacción"
+      ]
+    },
+    {
+      "id": "q015",
+      "category": "fundamentos_ia_financiera",
+      "question": "¿Qué factores explican la adopción de Robo-advisors y cómo se relaciona con la democratización de las inversiones?",
+      "difficulty": "intermediate",
+      "expected_papers": [
+        "fin_ai_009"
+      ],
+      "key_concepts": [
+        "Robo-advisors",
+        "gestión pasiva",
+        "costos",
+        "asesoría automatizada"
+      ]
+    },
+    {
+      "id": "q016",
+      "category": "trading_algoritmico",
+      "question": "¿Cuáles son las modalidades de arbitraje más frecuentes en el mercado de derivados utilizando IA?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "trade_007"
+      ],
+      "key_concepts": [
+        "derivados",
+        "opciones",
+        "cobertura",
+        "arbitraje"
+      ]
+    },
+    {
+      "id": "q017",
+      "category": "fundamentos_ia_financiera",
+      "question": "¿Cuál es la relación entre la capacidad de cómputo, el Big Data y la alpha generada por fondos cuantitativos?",
+      "difficulty": "advanced",
+      "expected_papers": [
+        "fin_ai_019",
+        "fin_ai_009",
+        "fin_ai_006"
+      ],
+      "key_concepts": [
+        "Alpha",
+        "Big Data",
+        "computación en la nube",
+        "rendimiento"
+      ]
+    },
+    {
+      "id": "q018",
+      "category": "gestion_de_riesgos",
+      "question": "¿Qué mecanismos de 'circuit breakers' algorítmicos existen en las bolsas modernas y qué tan efectivos son para detener espirales de venta?",
+      "difficulty": "specific",
+      "expected_papers": [
+        "risk_014"
+      ],
+      "key_concepts": [
+        "circuit breakers",
+        "market making",
+        "estabilidad de mercado",
+        "pánico algorítmico"
+      ]
+    },
+    {
+      "id": "q019",
+      "category": "fundamentos_ia_financiera",
+      "question": "¿Cómo compara el rendimiento de las redes neuronales recurrentes (RNN) versus las redes Long Short-Term Memory (LSTM) en la predicción de Forex?",
+      "difficulty": "advanced",
+      "expected_papers": [
+        "fin_ai_001",
+        "fin_ai_017",
+        "fin_ai_020"
+      ],
+      "key_concepts": [
+        "RNN",
+        "LSTM",
+        "Forex",
+        "memoria a largo plazo"
+      ]
+    },
+    {
+      "id": "q020",
+      "category": "metodologia_y_datos",
+      "question": "¿Cómo pueden integrarse enfoques de aprendizaje supervisado y no supervisado para detectar anomalías o fraudes en mercados financieros?",
+      "difficulty": "advanced",
+      "expected_papers": [
+        "meth_005",
+        "meth_003",
+        "meth_013"
+      ],
+      "key_concepts": [
+        "aprendizaje híbrido",
+        "detección de anomalías",
+        "clustering",
+        "fraude financiero"
+      ]
+    }
+  ]
+}
