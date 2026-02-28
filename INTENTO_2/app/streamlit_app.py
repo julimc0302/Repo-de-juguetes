@@ -1,8 +1,8 @@
 """
 streamlit_app.py
 ----------------
-Research Copilot — RAG interface for 20 academic papers on criminal governance
-and extortion in Latin America.
+Research Copilot — RAG interface for 20 academic papers on
+Inversión en Bolsa con IA y Machine Learning.
 
 Flow:
   1. API Key gate  — user enters OpenAI key (stored in session state only)
@@ -54,7 +54,9 @@ def _validate_api_key(key: str) -> tuple[bool, str]:
     if not key.startswith("sk-"):
         return False, "Una API key de OpenAI debe comenzar con 'sk-'."
     try:
-        from openai import OpenAI AuthenticationError
+        # FIX: imports separados y dentro del try para evitar UnboundLocalError
+        from openai import OpenAI
+        from openai import AuthenticationError
         OpenAI(api_key=key).models.list()
         return True, ""
     except AuthenticationError:
@@ -87,7 +89,7 @@ def render_api_key_gate() -> bool:
         st.markdown("## 📚 Research Copilot")
         st.markdown(
             "Asistente de investigación para **20 artículos académicos** sobre "
-            "Inversión en bolsa con IA, Machine Learning"
+            "Inversión en Bolsa con IA y Machine Learning."
         )
         st.divider()
         st.markdown("### 🔑 Ingresa tu OpenAI API Key")
