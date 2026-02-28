@@ -806,7 +806,7 @@ El ID de cada chunk se genera con MD5 del `filename + chunk_size + chunk_index`.
 Esto garantiza que el mismo chunk siempre tenga el mismo ID, lo que permite `upsert` idempotente.
 """
 
-!pip install chromadb
+#!pip install chromadb
 import chromadb
 import hashlib
 import json
@@ -1436,7 +1436,7 @@ print(url)
 """
 
 # 1. Instalamos la herramienta de conversión
-!pip install nbconvert
+#!pip install nbconvert
 
 # 2. Convertimos el archivo (reemplaza 'tu_archivo.ipynb' por el nombre real)
 # Nota: En Colab, el archivo suele llamarse 'colab_research_copilot.ipynb'
