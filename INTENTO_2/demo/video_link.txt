@@ -1,7 +1,7 @@
 Demo Video
 ==========
 
-[Pending - add your demo video URL here after recording]
+[https://repo-de-juguetes-vdguuijjbss5iaw8pxmkkf.streamlit.app/]
 
 Suggested recording tool: OBS Studio, Loom, or any screen recorder.
 
